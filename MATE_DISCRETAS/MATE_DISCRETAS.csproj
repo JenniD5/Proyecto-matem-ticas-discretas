@@ -55,13 +55,30 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="1termino.xaml.cs">
+      <DependentUpon>1termino.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="2terminos.xaml.cs">
+      <DependentUpon>2terminos.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Dos.xaml.cs">
       <DependentUpon>Dos.xaml</DependentUpon>
     </Compile>
     <Compile Include="suma.cs" />
+    <Compile Include="termino1.xaml.cs">
+      <DependentUpon>termino1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Uno.xaml.cs">
       <DependentUpon>Uno.xaml</DependentUpon>
     </Compile>
+    <Page Include="1termino.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="2terminos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Dos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -78,6 +95,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="termino1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Uno.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

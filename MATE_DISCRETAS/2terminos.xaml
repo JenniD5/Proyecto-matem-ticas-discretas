@@ -1,0 +1,90 @@
+﻿<UserControl x:Class="MATE_DISCRETAS._2terminos"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MATE_DISCRETAS"
+             mc:Ignorable="d" Width="399.682" Height="460.004">
+    <Grid Margin="0,0,-390,0">
+        <Button Margin="264,94,480,321" x:Name="borrar" Click="Borrar_Click">borrar</Button>
+        <Button x:Name="igual" Content="=" HorizontalAlignment="Left" Margin="16,94,0,0" VerticalAlignment="Top" Width="75" Click="Igual_Click"/>
+        <TextBlock x:Name="ver" HorizontalAlignment="Left" Margin="5,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="67"/>
+        <TextBlock x:Name="parentesis1" Margin="188,274,587,136" Visibility="Visible">(</TextBlock>
+        <DataGrid x:Name="tablasuma1" Margin="16,35,820.4,369.2" Visibility="Visible">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="proposicion1" Binding="{Binding uno}" Header="1"/>
+                <DataGridTextColumn x:Name="proposicion2" Binding="{Binding dos}" Header="2"/>
+                <DataGridTextColumn x:Name="cuadro3" Binding="{Binding tres}" Header="3"/>
+            </DataGrid.Columns>
+
+
+        </DataGrid>
+        <TextBlock x:Name="ver_Copy" HorizontalAlignment="Left" Margin="122,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="75"/>
+        <TextBlock x:Name="ver_Copy1" HorizontalAlignment="Left" Margin="15,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="75"/>
+        <TextBlock x:Name="ver_Copy2" HorizontalAlignment="Left" Margin="178,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="115"/>
+        <ComboBox x:Name="prop1" Margin="8,270,744,140.6" SelectionChanged="prop1_SelectionChanged" Visibility="Visible">
+            <ComboBoxItem x:Name="p1" Content="p"/>
+            <ComboBoxItem x:Name="q1" Content="q"/>
+            <ComboBoxItem x:Name="r1" Content="r"/>
+            <ComboBoxItem x:Name="s1" Content="s"/>
+        </ComboBox>
+        <ComboBox x:Name="prop2" Margin="105,271,660,140" SelectionChanged="prop2_SelectionChanged" Visibility="Visible">
+            <ComboBoxItem x:Name="p2" Content="p"/>
+            <ComboBoxItem x:Name="q2" Content="q"/>
+            <ComboBoxItem x:Name="r2" Content="r"/>
+            <ComboBoxItem x:Name="s2" Content="s"/>
+        </ComboBox>
+        <ComboBox x:Name="prop3term2" Margin="207,272,550,139"  Visibility="Visible" SelectionChanged="Prop3term2_SelectionChanged" RenderTransformOrigin="0.5,0.503">
+            <ComboBoxItem x:Name="p3" Content="p"/>
+            <ComboBoxItem x:Name="q3" Content="q"/>
+            <ComboBoxItem x:Name="r3" Content="r"/>
+            <ComboBoxItem x:Name="s3" Content="s"/>
+        </ComboBox>
+
+        <ComboBox x:Name="signo" Margin="59,270,704,141" SelectionChanged="signo_SelectionChanged" Visibility="Visible">
+            <ComboBoxItem x:Name="sumas" Content="+"/>
+            <ComboBoxItem x:Name="multiplicacion" Content="*"/>
+            <ComboBoxItem x:Name="division" Content="/"/>
+            <ComboBoxItem x:Name="negacion" Content="-"/>
+        </ComboBox>
+        <ComboBox x:Name="signo2" Margin="255,272,500,139" SelectionChanged="signo2_SelectionChanged" Visibility="Visible">
+            <ComboBoxItem x:Name="sumas2" Content="+"/>
+            <ComboBoxItem x:Name="multiplicacion2" Content="*"/>
+            <ComboBoxItem x:Name="division2" Content="/"/>
+            <ComboBoxItem x:Name="negacion2" Content="-"/>
+        </ComboBox>
+
+
+        <TextBlock x:Name="ver_Copy3" HorizontalAlignment="Left" Margin="55,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="67"/>
+        <ComboBox x:Name="prop4term2" Margin="307,270,453,140"  Visibility="Visible" RenderTransformOrigin="0.5,0.5" SelectionChanged="Prop4term2_SelectionChanged">
+            <ComboBoxItem x:Name="p4" Content="p"/>
+            <ComboBoxItem x:Name="q4" Content="q"/>
+            <ComboBoxItem x:Name="r4" Content="r"/>
+            <ComboBoxItem x:Name="s4" Content="s"/>
+        </ComboBox>
+        <TextBlock x:Name="parentesis2" Margin="356,272,418,137" Visibility="Visible"><Run Text=")"/></TextBlock>
+        <TextBlock x:Name="ver_Copy4" HorizontalAlignment="Left" Margin="175,272,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="0" Width="68"/>
+        <TextBlock x:Name="ver_result2" HorizontalAlignment="Left" Margin="130,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="27" Width="40"/>
+        <TextBlock x:Name="ver_term2" HorizontalAlignment="Left" Margin="47,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="75"/>
+        <TextBlock x:Name="ver_prop4term2" HorizontalAlignment="Left" Margin="230,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="66" RenderTransformOrigin="0.432,0.6"/>
+        <TextBlock x:Name="ver_resultadofinal" HorizontalAlignment="Left" Margin="8,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="115"/>
+        <TextBlock x:Name="resultado1" HorizontalAlignment="Left" Margin="406,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="115"/>
+
+        <DataGrid x:Name="tablasuma2" Margin="130,47,565,279.6" Visibility="Visible">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="proposicion3" Binding="{Binding uno}" Header="1"/>
+                <DataGridTextColumn x:Name="proposicion4" Binding="{Binding dos}" Header="2"/>
+                <DataGridTextColumn x:Name="cuadro1" Binding="{Binding tres}" Header="3"/>
+                <DataGridTextColumn x:Name="cuadro2" Binding="{Binding cuatro}" Header="4"/>
+                <DataGridTextColumn x:Name="cuadro" Binding="{Binding cinco}" Header="5"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <ComboBox x:Name="signoextra" Margin="148,271,615,141" SelectionChanged="signoextra_SelectionChanged" Visibility="Visible">
+            <ComboBoxItem x:Name="sumas1" Content="+"/>
+            <ComboBoxItem x:Name="multiplicacion1" Content="*"/>
+            <ComboBoxItem x:Name="division1" Content="/"/>
+            <ComboBoxItem x:Name="negacion1" Content="-"/>
+        </ComboBox>
+        <TextBlock x:Name="ver_signoconector" HorizontalAlignment="Left" Margin="16,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="75"/>
+    </Grid>
+</UserControl>

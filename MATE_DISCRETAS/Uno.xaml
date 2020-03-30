@@ -5,41 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MATE_DISCRETAS"
         mc:Ignorable="d"
-        Title="Uno" Height="476.4" Width="583.2">
-    <Grid Margin="0,0,3.8,1.2">
-        <Button x:Name="igual" Content="=" HorizontalAlignment="Left" Margin="446,270,0,0" VerticalAlignment="Top" Width="75" Click="Igual_Click"/>
-        <TextBlock x:Name="ver" HorizontalAlignment="Left" Margin="76,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="75"/>
-        <DataGrid x:Name="tablasuma1" Margin="16,35,253,256" Visibility="Visible">
-            <DataGrid.Columns>
-                <DataGridTextColumn x:Name="proposicion1" Binding="{Binding uno}" Header="1"/>
-                <DataGridTextColumn x:Name="proposicion2" Binding="{Binding dos}" Header="2"/>
-                <DataGridTextColumn x:Name="cuadro3" Binding="{Binding tres}" Header="3"/>
-            </DataGrid.Columns>
+        Title="Uno" Height="587.509" Width="954.579">
+    <Grid Margin="0,0,29.6,18.4">
 
 
-        </DataGrid>
-        <TextBlock x:Name="ver_Copy" HorizontalAlignment="Left" Margin="181,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="75"/>
-        <TextBlock x:Name="ver_Copy1" HorizontalAlignment="Left" Margin="81,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="75"/>
-        <TextBlock x:Name="ver_Copy2" HorizontalAlignment="Left" Margin="211,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="115"/>
-        <ComboBox x:Name="prop1" Margin="46,355,369,56" SelectionChanged="prop1_SelectionChanged">
-            <ComboBoxItem x:Name="p1" Content="p"/>
-            <ComboBoxItem x:Name="q1" Content="q"/>
-            <ComboBoxItem x:Name="r1" Content="r"/>
-            <ComboBoxItem x:Name="s1" Content="s"/>
-        </ComboBox>
-        <ComboBox x:Name="prop2" Margin="407,355,9,56" SelectionChanged="prop2_SelectionChanged">
-            <ComboBoxItem x:Name="p2" Content="p"/>
-            <ComboBoxItem x:Name="q2" Content="q"/>
-            <ComboBoxItem x:Name="r2" Content="r"/>
-            <ComboBoxItem x:Name="s2" Content="s"/>
+
+        <Grid HorizontalAlignment="Left" x:Name="terminosgrid" Height="459" Margin="28,70,0,0" VerticalAlignment="Top" Width="880"/>
+        <ComboBox x:Name="terminosextra2" Margin="10,10,816.4,495.2" SelectionChanged="terminosextra2_SelectionChanged">
+            <ComboBoxItem x:Name="t3" Content="1"/>
+            <ComboBoxItem x:Name="t4" Content="2"/>
+
         </ComboBox>
 
-        <ComboBox x:Name="signo" Margin="229,355,188,56" SelectionChanged="signo_SelectionChanged">
-            <ComboBoxItem x:Name="sumas" Content="+"/>
-            <ComboBoxItem x:Name="multiplicacion" Content="*"/>
-            <ComboBoxItem x:Name="division" Content="/"/>
-            <ComboBoxItem x:Name="negacion" Content="-"/>
-        </ComboBox>
+
 
     </Grid>
 </Window>
