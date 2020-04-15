@@ -41,6 +41,10 @@ namespace MATE_DISCRETAS
                     terminosgrid.Children.Clear();
                     terminosgrid.Children.Add(new _2terminos());
                     break;
+                case 2:
+                    terminosgrid.Children.Clear();
+                    terminosgrid.Children.Add(new equivalencias());
+                    break;
 
             }
         }

@@ -13,7 +13,9 @@
         <Grid HorizontalAlignment="Left" x:Name="terminosgrid" Height="459" Margin="28,70,0,0" VerticalAlignment="Top" Width="880"/>
         <ComboBox x:Name="terminosextra2" Margin="10,10,816.4,495.2" SelectionChanged="terminosextra2_SelectionChanged">
             <ComboBoxItem x:Name="t3" Content="1"/>
-            <ComboBoxItem x:Name="t4" Content="2"/>
+            <ComboBoxItem x:Name="t4" Content="2"></ComboBoxItem>
+            <ComboBoxItem x:Name="t5" Content="condicionales"/>
+            
 
         </ComboBox>
 

@@ -7,7 +7,7 @@
              mc:Ignorable="d" Width="252.463" Height="295.936">
     <Grid Margin="0,0,-483.2,-151" HorizontalAlignment="Left" Width="736">
         <Button x:Name="igual" Content="=" HorizontalAlignment="Left" Margin="114,72,0,0" VerticalAlignment="Top" Width="75" Click="Igual_Click"/>
-        <TextBlock x:Name="ver" HorizontalAlignment="Left" Margin="159,215,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="30"/>
+        <TextBlock x:Name="ver" HorizontalAlignment="Left" Margin="196,215,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="30"/>
         <TextBlock x:Name="parentesis1" Margin="265,350,281,61" Visibility="Hidden">(</TextBlock>
         <DataGrid x:Name="tablasuma1" Margin="16,35,638,311" Visibility="Visible">
             <DataGrid.Columns>
@@ -18,16 +18,18 @@
 
 
         </DataGrid>
-        <TextBlock x:Name="ver_Copy" HorizontalAlignment="Left" Margin="103,215,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="32"/>
+        <TextBlock x:Name="ver_Copy" HorizontalAlignment="Left" Margin="66,215,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="32"/>
         <TextBlock x:Name="ver_Copy1" HorizontalAlignment="Left" Margin="23,215,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="30"/>
         <TextBlock x:Name="ver_Copy2" HorizontalAlignment="Left" Margin="103,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="115"/>
-        <ComboBox x:Name="prop1" Margin="53,247,638,164" SelectionChanged="prop1_SelectionChanged" Visibility="Visible">
+        <ComboBox x:Name="prop1" Margin="53,247,638,164" SelectionChanged="prop1_SelectionChanged" Visibility="Visible" RenderTransformOrigin="0.502,0.503">
             <ComboBoxItem x:Name="p1" Content="p"/>
             <ComboBoxItem x:Name="q1" Content="q"/>
             <ComboBoxItem x:Name="r1" Content="r"/>
             <ComboBoxItem x:Name="s1" Content="s"/>
+           
+           
         </ComboBox>
-        <ComboBox x:Name="prop2" Margin="196,247,492,164" SelectionChanged="prop2_SelectionChanged" Visibility="Visible">
+        <ComboBox x:Name="prop2" Margin="196,247,492,164" SelectionChanged="prop2_SelectionChanged" Visibility="Visible" RenderTransformOrigin="0.5,0.503">
             <ComboBoxItem x:Name="p2" Content="p"/>
             <ComboBoxItem x:Name="q2" Content="q"/>
             <ComboBoxItem x:Name="r2" Content="r"/>
@@ -38,8 +40,7 @@
         <ComboBox x:Name="signo" Margin="124,247,567,164" SelectionChanged="signo_SelectionChanged" Visibility="Visible">
             <ComboBoxItem x:Name="sumas" Content="+"/>
             <ComboBoxItem x:Name="multiplicacion" Content="*"/>
-            <ComboBoxItem x:Name="division" Content="/"/>
-            <ComboBoxItem x:Name="negacion" Content="-"/>
+            
         </ComboBox>
         <TextBlock x:Name="ver_Copy3" HorizontalAlignment="Left" Margin="307,325,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="67"/>
         <DataGrid x:Name="negativo1" Margin="16,35,638,291" Visibility="Visible" SelectionChanged="Negativo1_SelectionChanged">
@@ -52,6 +53,28 @@
         </DataGrid>
         <RadioButton Content="negativo" HorizontalAlignment="Left" Margin="16,196,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
         <CheckBox x:Name="negativo2" Content="negatvo" HorizontalAlignment="Left" Margin="103,196,0,0" VerticalAlignment="Top" Checked="Negativo2_Checked"/>
+        <DataGrid x:Name="negativo2terminos" Margin="159,35,492,271" Visibility="Visible" SelectionChanged="Negativo1_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="proposicion5" Binding="{Binding uno}" Header="1"/>
+                <DataGridTextColumn x:Name="proposicion6" Binding="{Binding dos}" Header="2"/>
+                <DataGridTextColumn x:Name="proposicion7" Binding="{Binding tres}" Header="3"/>
+                <DataGridTextColumn x:Name="proposicion8" Binding="{Binding cuatro}" Header="4"/>
+            </DataGrid.Columns>
+
+
+        </DataGrid>
+        <DataGrid x:Name="negativo2terminos2" Margin="8,35,627,271" Visibility="Visible" SelectionChanged="Negativo1_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="proposicion9" Binding="{Binding uno}" Header="1"/>
+                <DataGridTextColumn x:Name="proposicion10" Binding="{Binding dos}" Header="2"/>
+                <DataGridTextColumn x:Name="proposicion11" Binding="{Binding tres}" Header="3"/>
+                <DataGridTextColumn x:Name="proposicion12" Binding="{Binding cuatro}" Header="4"/>
+                <DataGridTextColumn x:Name="proposicion13" Binding="{Binding cinco}" Header="5"/>
+            </DataGrid.Columns>
+
+
+        </DataGrid>
+        <RadioButton Content="positivo" HorizontalAlignment="Left" Margin="16,176,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_1" />
 
 
 

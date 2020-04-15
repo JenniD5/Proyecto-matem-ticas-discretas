@@ -61,8 +61,14 @@
     <Compile Include="2terminos.xaml.cs">
       <DependentUpon>2terminos.xaml</DependentUpon>
     </Compile>
+    <Compile Include="condicionales.xaml.cs">
+      <DependentUpon>condicionales.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Dos.xaml.cs">
       <DependentUpon>Dos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="equivalencias.xaml.cs">
+      <DependentUpon>equivalencias.xaml</DependentUpon>
     </Compile>
     <Compile Include="suma.cs" />
     <Compile Include="termino1.xaml.cs">
@@ -79,7 +85,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="condicionales.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Dos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="equivalencias.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
